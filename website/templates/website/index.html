@@ -1,0 +1,33 @@
+{% extends 'website/layout.html '%}
+{% load static %}
+
+
+{% block body%}
+<section class="home">
+    <div class="max-width">
+      <div class="home-content">
+        <div class="text-1">Hello, my name is</div>
+        <div class="text-2">Euan</div>
+        <div class="text-3">I'm <span class="typing"></span></div>
+        <p style="color:lavender;" class="text-4">
+            Less of a portfolio, more of a diary :)
+        </p>
+        <br>
+        <a class="btn btn-light"href="{%url 'about'%}">Get in touch</a>
+    </div>
+    </div>
+  </section>
+{% endblock%}
+
+{% block script%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+<script src="{%static 'website/index.js' %}"></script>
+<script>
+    var typed= new Typed(".typing",{
+        strings:["a Beginner Web Developer","a Photographer","a Photo and Video Editor","an Economics Tutor","still building this"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop: true,
+        loopCount: Infinity 
+    });</script>
+{% endblock%}
