@@ -118,3 +118,24 @@ home .home-content .text-4{
   z-index: 5;
 }
 
+
+.professional{
+  margin-top: 6rem;
+  font-weight: 100;
+  font-family: 'Poppins', sans-serif;
+  color:white;
+}
+
+.icon{
+  float:left;
+  margin-right:10px;
+}
+
+.card{
+  background-color: #343a40!important;
+}
+
+.card-text{
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+}
